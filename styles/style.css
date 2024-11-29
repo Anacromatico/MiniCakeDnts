@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fredoka:wght@300..700&display=swap');
+
+:root {
+    word-break: break-word;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../layout_images/donuts_fundo_colorido.svg");
+    background-color: #ff7d7d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0 1rem 0 3rem;
+    padding: 0.8rem 0 0.8rem 0;
+    font-family: "Fredoka", system-ui;
+    letter-spacing: .3rem;
+    font-weight: 900;
+}
+
+h2 {
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    font-family: "Fredoka", system-ui;
+    letter-spacing: .2rem;
+}
+
+h3 {
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    font-family: "Fredoka", system-ui;
+}
+h4 {
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    font-family: "Fredoka", sans-serif;
+}
+p {
+    margin: 0 1rem 0 1rem;
+    padding: 0.5rem 0 0.5rem 0;
+    font-family: "Fredoka", sans-serif;
+}
+
+a {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    padding: 0.5rem 0 0.5rem 0;
+    font-family: "Fredoka", sans-serif;
+}
+a:hover {
+    color: #fff4f4;
+}
+.txt_direita {
+    text-align: right;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.card {
+    border-radius: 1rem;
+}
+
+.branco {
+    background-color: #ffc8c8;
+    color: #270001;
+}
+
+.marrom {
+    background-color: #340001;
+    background-image: url(../layout_images/donuts_fundo_preto.svg);
+    color: #fff4f4;
+}
+
+.inferior_div {
+    border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.borda_branca {
+    border: 0.2rem solid #f5e7e7;
+}
+
+.borda_marrom {
+    border: 0.2rem solid #340001;
+}
+.veja_mais {
+    width: 100%;
+    border-radius: 0 0 0.8rem 0.8rem;
+    padding: .5rem 0 .5rem 0;
+}
+.marrom a {
+    color: #f5e7e7;
+}
+
+/* COMEÇO TOPO */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+header figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* logo */
+header figure img {
+    height: auto;
+}
+
+/* LISTA NAV */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 2.5rem;
+}
+nav ul li a {
+    color: #340001;
+    font-weight: 500;
+}
+/* SOBRE */
+.ult_section {
+    background-color: #777;
+    margin-top: 15rem;
+    border-radius: .5rem .5rem 0 0;
+}
+footer {
+    margin-top: 3rem;
+    background-color: #777;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 400px) {
+    .card {
+        width: 100%;
+    }
+
+    /* TOPO */
+    /* logo */
+    header figure img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 930px) {
+
+    /* LISTA NAV */
+    nav ul li {
+        float: top;
+        margin: .5rem 0 .5rem 0;
+    }
+}
+
+@media (min-width: 401px) {
+    .card {
+        width: 70%;
+        min-width: 400px;
+        max-width: 1000px;
+    }
+
+    /* TOPO */
+    /* logo */
+    header figure img {
+        min-width: 400px;
+        max-width: 650px;
+        width: 60%;
+    }
+}
+
+@media (min-width: 931px) {
+
+    /* LISTA NAV */
+    nav ul li {
+        float: left;
+    }
+}
