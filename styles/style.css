@@ -143,13 +143,27 @@ nav ul li a {
 }
 /* SOBRE */
 .ult_section {
-    background-color: #777;
+    background-color: rgba(160, 160, 160, .7);
     margin-top: 15rem;
     border-radius: .5rem .5rem 0 0;
 }
+.sobre h2 {
+    text-align: center;
+}
 footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
     margin-top: 3rem;
-    background-color: #777;
+    gap: 2rem;
+}
+.info_com_foto {
+    display: flex;
+    flex-wrap: wrap;
+}
+.info_com_foto h4 {
+    text-align: center;
 }
 /* MEDIA QUERIES */
 
