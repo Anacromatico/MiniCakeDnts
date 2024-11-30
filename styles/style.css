@@ -58,7 +58,7 @@ p {
 a {
     margin-left: .5rem;
     margin-right: .5rem;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: .3rem;
     font-family: "Fredoka", sans-serif;
 }
 
@@ -172,9 +172,11 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
 }
+.Especiais_gif figure img {
+    border-radius: 1rem;
+}
 .Especiais_gif h3 {
-    width: 100%;
-    padding-left: 2rem;
+    width: 90%;
 }
 
 /* SOBRE */
@@ -194,7 +196,6 @@ footer {
     gap: 2rem;
     align-items: center;
     margin-top: 3rem;
-    gap: 2rem;
 }
 
 .info_com_foto {
@@ -214,6 +215,33 @@ footer {
 
 .info_com_foto h4 {
     text-align: center;
+}
+
+/* CONTATO */
+.WhattsApp {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center ;
+}
+.WhattsApp h2, h3 {
+    width: 95%;
+}
+.WhattsApp button {
+    border: 0;
+    background-color: #0EC043;
+    width: 80%;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 2rem;
+    padding: .3rem 0 .3rem 0;
+}
+.WhattsApp > :last-child {
+    margin-bottom: 3rem;
+}
+.WhattsApp img {
+    max-width: 300px;
+    width: 95%;
 }
 
 /* MEDIA QUERIES */
@@ -269,8 +297,7 @@ footer {
         gap: .8rem;
     }
     .flex_fotos_docuras h3 {
-        width: 100%;
-        padding-left: 2rem;
+        width: 90%;
     }
     .foto_p {
         width: 90%;
