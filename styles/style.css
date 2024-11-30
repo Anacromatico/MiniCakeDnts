@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fredoka:wght@300..700&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
+
 :root {
     word-break: break-word;
 }
@@ -40,11 +42,13 @@ h3 {
     padding: 0.5rem 0 0.5rem 0;
     font-family: "Fredoka", system-ui;
 }
+
 h4 {
     margin: 0 1rem 0 1rem;
     padding: 0.5rem 0 0.5rem 0;
     font-family: "Fredoka", sans-serif;
 }
+
 p {
     margin: 0 1rem 0 1rem;
     padding: 0.5rem 0 0.5rem 0;
@@ -57,9 +61,11 @@ a {
     padding: 0.5rem 0 0.5rem 0;
     font-family: "Fredoka", sans-serif;
 }
+
 a:hover {
     color: #fff4f4;
 }
+
 .txt_direita {
     text-align: right;
 }
@@ -98,15 +104,25 @@ section {
 .borda_marrom {
     border: 0.2rem solid #340001;
 }
+
 .veja_mais {
     width: 100%;
     border-radius: 0 0 0.8rem 0.8rem;
     padding: .5rem 0 .5rem 0;
 }
+
 .marrom a {
     color: #f5e7e7;
 }
-
+figure {
+    margin: 0;
+}
+.foto_p img{
+    border-radius: 1rem;
+}
+.click :hover{
+    cursor: pointer;
+}
 /* COMEÇO TOPO */
 header {
     display: flex;
@@ -126,9 +142,8 @@ header figure {
 header figure img {
     height: auto;
 }
-header figure img:hover {
-    cursor: pointer;
-}
+
+
 /* LISTA NAV */
 
 nav {
@@ -141,19 +156,38 @@ nav {
 nav ul li {
     margin-right: 2.5rem;
 }
+
 nav ul li a {
     color: #340001;
     font-weight: 500;
 }
+/* ESPECIAIS */
+.Especiais_gif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Especiais_gif figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Especiais_gif h3 {
+    width: 100%;
+    padding-left: 2rem;
+}
+
 /* SOBRE */
 .ult_section {
     background-color: rgba(160, 160, 160, .7);
     margin-top: 15rem;
     border-radius: .5rem .5rem 0 0;
 }
+
 .sobre h2 {
     text-align: center;
 }
+
 footer {
     display: flex;
     flex-direction: column;
@@ -162,13 +196,16 @@ footer {
     margin-top: 3rem;
     gap: 2rem;
 }
+
 .info_com_foto {
     display: flex;
     flex-wrap: wrap;
 }
+
 .info_com_foto h4 {
     text-align: center;
 }
+
 /* MEDIA QUERIES */
 
 @media (max-width: 400px) {
@@ -209,9 +246,47 @@ footer {
 }
 
 @media (min-width: 931px) {
-
     /* LISTA NAV */
     nav ul li {
         float: left;
+    }
+}
+@media (max-width: 1299px) {
+    .flex_fotos_docuras {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: .8rem;
+    }
+    .flex_fotos_docuras h3 {
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .foto_p {
+        width: 90%;
+        max-width: 512px;
+    }   
+    .foto_p img {
+        width: 100%;
+        height: auto;
+    }
+    .flex_fotos_docuras > :last-child{
+        margin-bottom: 1.6rem;
+    }
+}
+@media (min-width: 1300px) {
+    /* DOCURAS INDEX */
+    .flex_fotos_docuras {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+    }
+    .flex_fotos_docuras > :last-child {
+        margin-bottom: 2rem;
+    }
+    .flex_fotos_docuras h3 {
+        flex-basis: 30%;
     }
 }
