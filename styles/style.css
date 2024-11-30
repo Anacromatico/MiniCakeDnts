@@ -200,6 +200,16 @@ footer {
 .info_com_foto {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.info_com_foto figure {
+    max-width: 150px;
+    min-width: 15px;
+}
+.info_com_foto figure img {
+    width: 100%;
+    height: auto;
 }
 
 .info_com_foto h4 {
