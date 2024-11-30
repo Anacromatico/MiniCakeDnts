@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Fredoka:wght@300..700&display=swap');
-
+html {
+    scroll-behavior: smooth;
+}
 :root {
     word-break: break-word;
 }
@@ -124,7 +126,9 @@ header figure {
 header figure img {
     height: auto;
 }
-
+header figure img:hover {
+    cursor: pointer;
+}
 /* LISTA NAV */
 
 nav {
